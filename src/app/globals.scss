@@ -1,0 +1,45 @@
+:root {
+  --prime-b:#004B8D;
+  --prime-gb: #A2B9D0;
+  --second-dg: #4A4A4A;
+  --second-lg:#E6E6E6;
+  // --accent-w: #fff;
+  --accent-mb: #0074D9;
+  --accent-lb: #007aff;
+  --neutral-lg: #F5F5F5;
+  --neutral-db: #00274D;
+  --main-txt: #19191B;
+  --second-txt: #353943;
+  --light-txt: #fff;
+
+  --bg-lg: hsl(223,90%,90%);
+
+  --btn-border: 5px;
+  
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
