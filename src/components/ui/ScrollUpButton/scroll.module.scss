@@ -1,0 +1,24 @@
+.container {
+    position: fixed;
+    bottom: 40px;
+    right: 40px; 
+    border-radius: 50%;
+    z-index: 0;
+    
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 250ms;
+
+    &:hover {
+       opacity: 0.5
+    }
+}
