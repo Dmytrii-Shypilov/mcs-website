@@ -21,30 +21,24 @@ const AboutUsSection: React.FC = () => {
           <div className={s.textBox}>
             <span className={s.subtitle}>ABOUT MCS</span>
             <h2 className={s.title}>
-              Something about our brilliant company and our expertise
+            Connecting Global Businesses with Strategic Expertise in Government and Corporate Consultancy
             </h2>
             <p className={s.text}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              qui natus eveniet. Sed repellendus ex quasi recusandae magni illum
-              culpa qui quis fugit. Hic ex architecto facilis maxime, fuga
-              repellat!
-            
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              qui natus eveniet. Sed repellendus ex quasi recusandae magni illum
-              culpa qui quis fugit. Hic ex architecto facilis maxime, fuga
-              repellat!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              qui natus eveniet. Sed repellendus ex quasi recusandae magni illum
-              culpa qui quis fugit. Hic ex architecto facilis maxime, fuga
-              repellat!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              qui natus eveniet. Sed repellendus ex quasi recusandae magni illum
-              culpa qui quis fugit. Hic ex architecto facilis maxime, fuga
-              repellat!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              qui natus eveniet. Sed repellendus ex quasi recusandae magni illum
-              culpa qui quis fugit. Hic ex architecto facilis maxime, fuga
-              repellat!
+              MCS, abbreviated Maria Consultancy Services, is a consultancy brand operating under the umbrella of Maria
+              Group International. That was initially established to cater to the needs of the consulting
+              services highly demanded by various companies and organisations
+            </p>
+            <p className={s.text}>
+              Our mission is to connect Western and Far Eastern businesses with
+              the UAE, GCC, and African markets, leveraging our deep expertise
+              in government and corporate relations to create lasting, mutually
+              beneficial partnerships.
+            </p>
+            <p className={s.text}>
+              We are committed to delivering expert consultancy services that
+              bridge cultural divides, streamline government and corporate
+              interactions, and enable our clients to thrive in the complex and
+              diverse markets of the Middle East and Africa.
             </p>
           </div>
         </div>

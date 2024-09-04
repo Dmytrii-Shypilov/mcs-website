@@ -47,7 +47,7 @@ const ScrollUpButton: React.FC = () => {
               cx="50"
               cy="50"
               r={radius}
-              stroke="rgba(0, 0, 0, 0.1)" // Non-progress part
+              stroke="rgba(0, 0, 0, 0.1)" 
               strokeWidth="5"
               fill="none"
             />
@@ -66,8 +66,8 @@ const ScrollUpButton: React.FC = () => {
               d="M3 19h18a1.002 1.002 0 00.823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 003 19zm9-12.243L19.092 17H4.908L12 6.757z"
               fill="rgba(0, 75, 141, 0.6)"
               stroke="rgba(0, 75, 141, 0.6)"
-              transform="translate(26, 25) scale(2)" // Adjust these values as needed
-              strokeWidth="0.5" // Adjust stroke width if needed
+              transform="translate(26, 25) scale(2)" 
+              strokeWidth="0.5" 
             />
           </svg>
         </div>
