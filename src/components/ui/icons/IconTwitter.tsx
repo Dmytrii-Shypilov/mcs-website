@@ -1,7 +1,7 @@
 const IconTwitter: React.FC = () => {
   return (
     <svg
-      height="25"
+      height="15"
       width="auto"
       viewBox="0 0 1200 1227"
       xmlns="http://www.w3.org/2000/svg"
