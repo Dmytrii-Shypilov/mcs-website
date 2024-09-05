@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.scss";
 
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import ScrollUpButton from "@/components/ui/ScrollUpButton/ScrollUpButton";
 
 const roboto = Roboto({ weight: ['400', '500', '700'], style: ['normal'], subsets: ['latin']});
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={roboto.className} style={{position: 'relative'}}>
         <Header/>
         {children}
+        <Footer/>
         <ScrollUpButton/>
         </body>
     </html>
