@@ -21,11 +21,13 @@ const AboutUsSection: React.FC = () => {
           <div className={s.textBox}>
             <span className={s.subtitle}>ABOUT MCS</span>
             <h2 className={s.title}>
-            Connecting Global Businesses with Strategic Expertise in Government and Corporate Consultancy
+              Experts in Strategic Government and Corporate Consultancy
             </h2>
+            
             <p className={s.text}>
-              MCS, abbreviated Maria Consultancy Services, is a consultancy brand operating under the umbrella of Maria
-              Group International. That was initially established to cater to the needs of the consulting
+              MCS, short for Maria Consultancy Services, is a consultancy brand
+              operating under the umbrella of Maria Group International that was
+              initially established to cater to the needs of the consulting
               services highly demanded by various companies and organisations
             </p>
             <p className={s.text}>

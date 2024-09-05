@@ -1,0 +1,12 @@
+.btn {
+    height: 35px;
+    width: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 250ms;
+
+    &:hover {
+       transform: translateX(5px);
+    }
+}
