@@ -4,6 +4,7 @@ import s from "./header.module.scss";
 
 import Link from "next/link";
 import Image from "next/image";
+import Container from "../Container/Container";
 import { usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={s.header}>
+      <Container>
       <nav className={s.nav}>
         <Link href="/">
           <Image
@@ -38,6 +40,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+      </Container>
     </header>
   );
 };

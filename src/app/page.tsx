@@ -2,7 +2,9 @@ import s from "./page.module.scss";
 
 import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutUsSection from "@/components/AboutUsSection/AboutUsSection";
+import DescriptionSection from "@/components/DescriptionSection/DescriptionSection";
 import OurExpertiseSection from "@/components/OurExpertiseSection/OurExpertiseSection";
+
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutUsSection/>
       <OurExpertiseSection/>
+      <DescriptionSection/>
     </main>
   );
 }

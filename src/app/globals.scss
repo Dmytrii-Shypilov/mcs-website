@@ -14,6 +14,7 @@
   --light-txt: #fff;
 
   --bg-lg: #F8FAFC;
+  --bg-white: #fff;
 
   --btn-border: 5px;
   
@@ -27,10 +28,16 @@
   margin: 0;
 }
 
-html,
+
 body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 100vw;
   overflow-x: hidden;
+  padding-top: 70px;
 }
 
 
