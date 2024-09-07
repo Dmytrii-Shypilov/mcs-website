@@ -2,21 +2,23 @@ import s from "./about.module.scss";
 
 import FramedImage from "../ui/FramedImage/FramedImage";
 import Container from "../Container/Container";
+import Transition from "../ui/Transition/Transition";
 
 const AboutUsSection: React.FC = () => {
   return (
     <section className={s.section}>
       <Container>
         <div className={s.wrapper}>
-          <div className={s.frame}>
+          <Transition as="div" animate='right'>
             <FramedImage
               src="/images/talking-persons.webp"
               alt="dubai-business"
               width={440}
+              height={528}
               frame="left"
             />
-          </div>
-          <div className={s.textBox}>
+          </Transition>
+          <Transition as='div' animate='left' duration={0.6} className={s.textBox}>
             <span className={s.subtitle}>ABOUT MCS</span>
             <h2 className={s.title}>
               Experts in Strategic Government and Corporate Consultancy
@@ -40,7 +42,7 @@ const AboutUsSection: React.FC = () => {
               interactions, and enable our clients to thrive in the complex and
               diverse markets of the Middle East and Africa.
             </p>
-          </div>
+          </Transition>
         </div>
       </Container>
     </section>

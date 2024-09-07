@@ -21,8 +21,8 @@ const Header: React.FC = () => {
       <nav className={s.nav}>
         <Link href="/">
           <Image
-            width={100}
-            height={100}
+            width={112}
+            height={40}
             style={{height: 40, width: 'auto'}}
             alt="mcs-logo"
             src="/images/mcs-logo.webp"
