@@ -9,14 +9,13 @@ const OurExpertiseSection: React.FC = () => {
   return (
     <section className={s.section}>
       <Container>
-        <Transition as="div" animate="up" duration={0.8}>
+        <Transition as="div" animate="up" >
           <span className={s.subtitle}>OUR EXPERTISE</span>
           <h2 className={s.title}>
             We strive to deliver exclusively tailored services
           </h2>
         </Transition>
-
-        <ul className={s.list}>
+        <Transition as="div" animate="up"> <ul className={s.list}>
           <li className={s.service_card}>
             <span className={s.icon}>
               <Icons.IconSetup />
@@ -56,7 +55,7 @@ const OurExpertiseSection: React.FC = () => {
             </p>
             <ArrowLinkButton linkTo="/business" />
           </li>
-        </ul>
+        </ul></Transition>
       </Container>
     </section>
   );

@@ -1,0 +1,27 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.menu {
+  width: 70%;
+  height: 100vh;
+  padding: 30px;
+  background-color: white;
+}
+
+.closeBtn {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.nav {
+    width: max-content;
+    margin: 0 auto;
+}

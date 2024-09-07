@@ -7,6 +7,10 @@ import IconTwitter from "./IconTwitter";
 import IconInstagram from "./IconInstagram";
 import IconPhone from "./IconPhone";
 import IconMail from "./IconMail";
+import IconMenu from "./IconMenu";
+import IconClose from "./IconClose";
+import IconDownload from "./IconDownload";
+
 
 export const Icons = {
   IconCorporate,
@@ -18,4 +22,7 @@ export const Icons = {
   IconInstagram,
   IconPhone, 
   IconMail,
+  IconMenu,
+  IconClose,
+  IconDownload
 };

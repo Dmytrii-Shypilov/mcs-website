@@ -9,13 +9,15 @@ const animations = {
     visible: { opacity: 1, y: 0 },
   },
   right: {
-    hidden: { opacity: 0, x: -30 },
+    hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   },
   left: {
-    hidden: { opacity: 0, x: 30 },
+    hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
   },
+  opacity: {hidden: { opacity: 0},
+  visible: { opacity: 1}}
 };
 
 const MotionElement = {
@@ -28,7 +30,7 @@ const MotionElement = {
 
 type TransitionProps = {
   as: "h1" | "h2" | "h3" | "div" | "p";
-  animate: "up" | "left" | "right";
+  animate: "up" | "left" | "right" | 'opacity';
   children: React.ReactNode;
   className?: string;
   duration?: number;

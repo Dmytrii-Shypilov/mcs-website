@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
     <section className={s.hero}>
       <div className={s.overlay}>
         <div className={s.wrapper}>
-          <div className={s.block}>
+          <Transition as='div' animate="opacity" duration={0.3} className={s.block}>
             <Transition as="div" animate="right">
               <div className={s.logo}>
                 <Image
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
             <Transition as="div" animate="left">
               <Button linkTo="/business">Explore our business</Button>
             </Transition>
-          </div>
+          </Transition>
         </div>
       </div>
     </section>
