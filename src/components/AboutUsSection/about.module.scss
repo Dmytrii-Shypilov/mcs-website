@@ -1,3 +1,4 @@
+
 .section {
   padding: 90px 0px;
 }
@@ -12,19 +13,19 @@
   width: 520px;
 }
 
+.title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--main-txt);
+}
+
 .subtitle {
   display: block;
   margin-bottom: 15px;
   font-size: 16px;
   font-weight: 700;
   color: var(--accent-mb);
-}
-
-.title {
-  margin-bottom: 30px;
-  font-size: 40px;
-  line-height: 48px;
-  color: var(--main-txt);
 }
 
 .text {
@@ -35,4 +36,5 @@
     margin-bottom: 10px;
   }
 }
+
 

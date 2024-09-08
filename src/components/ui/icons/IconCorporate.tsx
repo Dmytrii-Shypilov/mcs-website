@@ -4,7 +4,7 @@ const IconCorporate: React.FC = () => {
       fill="#004b8d"
       version="1.1"
       viewBox="0 0 1600 1600"
-      width="auto"
+      width="50"
       height="50"
       xmlns="http://www.w3.org/2000/svg"
     >

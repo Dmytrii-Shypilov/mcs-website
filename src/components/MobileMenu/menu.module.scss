@@ -10,18 +10,44 @@
   background-color: rgba(0, 0, 0, 0.55);
 }
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
   width: 70%;
   height: 100vh;
   padding: 30px;
   background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .closeBtn {
+  position: relative;
+  width: max-content;
   display: flex;
   margin-bottom: 30px;
+  cursor: pointer;
+  
+  &:hover {
+    color: var(--accent-mb);
+  }
 }
 
 .nav {
     width: max-content;
     margin: 0 auto;
+}
+
+.nav_list_item {
+  cursor: pointer;
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  transition: all 250ms;
+
+  &:hover {
+    color: var(--accent-mb);
+    transform: translateX(3px);
+  }
 }

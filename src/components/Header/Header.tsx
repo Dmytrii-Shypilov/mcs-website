@@ -4,7 +4,7 @@ import s from "./header.module.scss";
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 import Container from "../Container/Container";
@@ -15,6 +15,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const path = usePathname();
+  const router = useRouter()
 
   const getClass = (href: string) => {
     return path === href ? s.link_active : s.link;
@@ -57,7 +58,7 @@ const Header: React.FC = () => {
           </span>
         </div>
       </Container>
-      {isMenuOpen && <MobileMenu closeMenu={()=> setIsMenuOpen(false)}/>}
+       <MobileMenu isMenuOpen={isMenuOpen} closeMenu={()=> setIsMenuOpen(false)} router={router}/>
     </header>
   );
 };
