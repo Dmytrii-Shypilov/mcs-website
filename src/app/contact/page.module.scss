@@ -1,5 +1,48 @@
-.main {
-    background-image: url('/images/world-map.svg');
-    background-position: center;
-    background-size: contain;
+.section {
+  padding: 60px 0;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  background-image: url("/images/world-map.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textBlock {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 15px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-mb);
+}
+
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--main-txt);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--second-txt);
+}
+
+

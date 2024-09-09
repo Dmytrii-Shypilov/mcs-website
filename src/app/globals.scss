@@ -1,6 +1,6 @@
 :root {
   --prime-b:#004b8d;
-  --prime-gb: #A2B9D0;
+  --prime-gb: rgb(162, 185, 208);
   --second-dg: #4A4A4A;
   --second-lg:#E6E6E6;
   // --accent-w: #fff;
@@ -26,6 +26,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+scroll-behavior: smooth;
 }
 
 

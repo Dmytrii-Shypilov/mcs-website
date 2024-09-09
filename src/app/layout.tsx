@@ -6,7 +6,11 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ScrollUpButton from "@/components/ui/ScrollUpButton/ScrollUpButton";
 
-const roboto = Roboto({ weight: ['400', '500', '700'], style: ['normal'], subsets: ['latin']});
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "MCS",
@@ -20,13 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* <link rel="icon"  href="/images/mcs-logo.webp"  /> */}
+      </head>
       <body className={roboto.className}>
-        <div id='modal-root'></div>
-        <Header/>
+        <div id="modal-root"></div>
+        <Header />
         {children}
-        <Footer/>
-        <ScrollUpButton/>
-        </body>
+        <Footer />
+        <ScrollUpButton />
+      </body>
     </html>
   );
 }

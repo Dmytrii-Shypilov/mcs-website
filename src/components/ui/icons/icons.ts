@@ -10,6 +10,7 @@ import IconMail from "./IconMail";
 import IconMenu from "./IconMenu";
 import IconClose from "./IconClose";
 import IconDownload from "./IconDownload";
+import IconLocation from "./IconLocation";
 
 
 export const Icons = {
@@ -24,5 +25,6 @@ export const Icons = {
   IconMail,
   IconMenu,
   IconClose,
-  IconDownload
+  IconDownload,
+  IconLocation
 };
