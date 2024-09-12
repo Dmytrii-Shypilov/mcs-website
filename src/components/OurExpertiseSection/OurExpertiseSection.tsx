@@ -3,25 +3,21 @@ import s from "./expertise.module.scss";
 import Container from "../Container/Container";
 import ArrowLinkButton from "../ui/ArrowLinkButton/ArrowLinkButton";
 import Transition from "../ui/Transition/Transition";
+import Heading from "../Heading/Heading";
 import { Icons } from "../ui/icons/icons";
 
 const OurExpertiseSection: React.FC = () => {
   return (
     <section className={s.section}>
       <Container>
-        <Transition as="div" animate="up">
-          <span className={s.subtitle}>OUR EXPERTISE</span>
-          <h2 className={s.title}>
-            We strive to deliver exclusively tailored services
-          </h2>
-        </Transition>
+        <Heading subtitle="OUR EXPERTISE" title="We strive to deliver exclusively tailored services" animate="up" centered={true}/>
         <Transition as="div" animate="up">
           <ul className={s.list}>
             <li className={s.service_card}>
               <span className={s.icon}>
                 <Icons.IconSetup />
               </span>
-              <h3 className={s.service_name}>Company Formation</h3>
+              <h3 className={s.service_name}>Corporate Services</h3>
               <p className={s.service_info}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestiae adipisci nihil quam excepturi voluptatum reiciendis

@@ -16,8 +16,7 @@ const animations = {
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
   },
-  opacity: {hidden: { opacity: 0},
-  visible: { opacity: 1}}
+  opacity: { hidden: { opacity: 0 }, visible: { opacity: 1 } },
 };
 
 const MotionElement = {
@@ -30,7 +29,7 @@ const MotionElement = {
 
 type TransitionProps = {
   as: "h1" | "h2" | "h3" | "div" | "p";
-  animate: "up" | "left" | "right" | 'opacity';
+  animate: "up" | "left" | "right" | "opacity" | undefined;
   children: React.ReactNode;
   className?: string;
   duration?: number;
@@ -41,7 +40,7 @@ const Transition: React.FC<TransitionProps> = ({
   animate,
   children,
   className,
-  duration=0.6,
+  duration = 0.6,
 }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -51,8 +50,8 @@ const Transition: React.FC<TransitionProps> = ({
   return (
     <MotionComponent
       ref={ref}
-      variants={animations[animate]}
-      transition={{ duration}}
+      variants={animate ? animations[animate] : animations["up"]}
+      transition={{ duration }}
       className={className}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}

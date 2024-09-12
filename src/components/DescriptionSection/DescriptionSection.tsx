@@ -2,6 +2,7 @@ import s from "./description.module.scss";
 
 import Container from "../Container/Container";
 import FramedImage from "../ui/FramedImage/FramedImage";
+import Heading from "../Heading/Heading";
 import Transition from "../ui/Transition/Transition";
 
 const DescriptionSection: React.FC = () => {
@@ -10,10 +11,7 @@ const DescriptionSection: React.FC = () => {
       <Container>
         <div className={s.wrapper}>
           <Transition as="div" animate="right" className={s.textBox}>
-            <span className={s.subtitle}>DESCRIPTION</span>
-            <h2 className={s.title}>
-              MCS company comprehensive description title
-            </h2>
+            <Heading subtitle="OUR CONCEPT" title="MCS company comprehensive description title"/>
             <p className={s.text}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
               nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
@@ -35,6 +33,7 @@ const DescriptionSection: React.FC = () => {
           </Transition>
           <Transition as="div" animate="left">
             <FramedImage
+           
               alt="dubai-business"
               src="/images/downtown.webp"
               width={500}

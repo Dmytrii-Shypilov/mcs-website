@@ -2,6 +2,7 @@ import s from "./about.module.scss";
 
 import FramedImage from "../ui/FramedImage/FramedImage";
 import Container from "../Container/Container";
+import Heading from "../Heading/Heading";
 import Transition from "../ui/Transition/Transition";
 
 const AboutUsSection: React.FC = () => {
@@ -13,17 +14,13 @@ const AboutUsSection: React.FC = () => {
             <FramedImage
               src="/images/talking-persons.webp"
               alt="dubai-business"
-              width={440}
-              height={528}
-              frame="left"
+              width={460}
+              height={548}
+              // frame="left"
             />
           </Transition>
           <Transition as='div' animate='left' duration={0.6} className={s.textBox}>
-            <span className={s.subtitle}>ABOUT MCS</span>
-            <h2 className={s.title}>
-              Experts in Strategic Government and Corporate Consultancy
-            </h2>
-
+            <Heading subtitle="about mcs" title="Experts in Strategic Government and Corporate Consultancy"/>
             <p className={s.text}>
               MCS, short for Maria Consultancy Services, is a consultancy brand
               operating under the umbrella of Maria Group International that was
