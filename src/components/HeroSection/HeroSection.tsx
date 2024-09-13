@@ -23,6 +23,8 @@ const HeroSection: React.FC = () => {
                   alt="mcs-consultancy-logo"
                   src="/images/mcs-logo.svg"
                   loading="lazy"
+                  
+                  
                 />
               </div>
             </Transition>
@@ -34,6 +36,7 @@ const HeroSection: React.FC = () => {
             <Transition as="div" animate="left">
               <Button linkTo="/business">Explore our business</Button>
             </Transition>
+            
           </Transition>
         </div>
       </div>

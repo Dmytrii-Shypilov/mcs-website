@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const path = usePathname();
-  const router = useRouter()
+  const router = useRouter();
 
   const getClass = (href: string) => {
     return path === href ? s.link_active : s.link;
@@ -58,7 +58,12 @@ const Header: React.FC = () => {
           </span>
         </div>
       </Container>
-       <MobileMenu isMenuOpen={isMenuOpen} closeMenu={()=> setIsMenuOpen(false)} router={router}/>
+        <MobileMenu
+          isMenuOpen={isMenuOpen}
+          closeMenu={() => setIsMenuOpen(false)}
+          router={router}
+        />
+     
     </header>
   );
 };

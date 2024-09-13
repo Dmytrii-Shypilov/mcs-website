@@ -11,10 +11,11 @@ const Footer: React.FC = () => {
     <footer className={s.footer}>
       <Container>
         <div className={s.wrapper}>
+          <div className={s.logoSocial}>
           <Image
             src="/images/mcs-logo.webp"
-            width={150}
-            height={100}
+            width={125}
+            height={45}
             style={{ height: 45, width: "auto" }}
             alt="logo"
           />
@@ -30,6 +31,9 @@ const Footer: React.FC = () => {
               <SocialMediaLink href="" icon={<Icons.IconInstagram />} />
             </li>
           </ul>
+
+          </div>
+          
           <nav className={s.nav}>
             <ul className={s.nav_list}>
               <li className={s.nav_list_item}>
@@ -49,14 +53,15 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </nav>
-          <ul>
-            <li className={s.contact_item}>
+
+          <ul className={s.contacts_list}>
+            <li className={s.contacts_list_item}>
               <Icons.IconPhone/>
               <a className={s.contact_link} href="tel:+971 585 949 313">
                 +971 585 949 313
               </a>
             </li>
-            <li className={s.contact_item}>
+            <li className={s.contacts_list_item}>
               <Icons.IconMail/>
               <a
                 className={s.contact_link}

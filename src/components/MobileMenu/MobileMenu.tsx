@@ -56,7 +56,7 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen }) => {
           <motion.div
             initial={{ x: "100%"}}
             animate={{ x: 0 }}
-            transition={{ damping: 20, duration: 0.5 }}
+            transition={{ damping: 20, duration: 0.4 }}
             exit={{ x: "100%"}}
             className={s.menu}
           >

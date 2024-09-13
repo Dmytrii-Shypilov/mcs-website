@@ -1,61 +1,71 @@
+@import "../../app/mixins.module.scss";
+
 .header {
-    width: 100%;;
-    position:fixed;
-    top: 0;
-    height: 70px;
-    background-color: white;
-    z-index: 2;
-    border-bottom: 1px solid var(--neutral-lg);
-    
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  background-color: white;
+  z-index: 2;
+  border-bottom: 1px solid var(--neutral-lg);
 }
+
 .wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  @include screen-size(mobile) {
+    display: none;
+  }
 }
 
 .list {
-    display: flex;
-    align-items: center;
-    height: 100%;
-   
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .list_item {
-   &:not(:last-of-type) {
+  &:not(:last-of-type) {
     margin-right: 20px;
-   }
+  }
 }
 
 .link {
-    color: var(--main-txt);
-    font-weight: 500;
-    transition: color 200ms;
+  color: var(--main-txt);
+  font-weight: 500;
+  transition: color 200ms;
 
-    &:hover {
-        color: var(--accent-mb);
-    }
+  &:hover {
+    color: var(--accent-mb);
+  }
 }
 
 .link_active {
-    @extend .link;
-    color: var(--accent-mb);
+  @extend .link;
+  color: var(--accent-mb);
 }
 
 .icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+ 
+  transition: all 250ms;
+  &:hover {
+    fill: var(--accent-mb);
+  }
+
+  @include screen-size(mobile) {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 250ms;
-    &:hover {
-        fill: var(--accent-mb);
-    }
+  }
 }
+

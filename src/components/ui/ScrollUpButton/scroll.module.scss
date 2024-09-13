@@ -1,9 +1,16 @@
+@import '../../../app/mixins.module.scss';
+
 .container {
     position: fixed;
     bottom: 40px;
     right: 40px; 
     border-radius: 50%;
     z-index: 0;
+
+    @include screen-size(mobile) {
+        bottom: 30px;
+        right: 30px
+    }
     
 }
 
@@ -20,5 +27,9 @@
 
     &:hover {
        opacity: 0.5
+    }
+
+    @include screen-size(mobile) {
+        cursor: auto;
     }
 }

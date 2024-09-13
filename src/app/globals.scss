@@ -3,7 +3,6 @@
   --prime-gb: rgb(162, 185, 208);
   --second-dg: #4A4A4A;
   --second-lg:#E6E6E6;
-  // --accent-w: #fff;
   --accent-mb: #0074D9;
   --accent-lb: #007aff;
   --neutral-lg: #F5F5F5;
@@ -16,8 +15,7 @@
   --bg-lg: #F8FAFC;
   --bg-white: #fff;
 
-  --btn-border: 5px;
-  
+  --border-r: 5px;
 }
 
 
@@ -54,25 +52,4 @@ ul {
   padding: 0;
 }
 
-// GLOBAL STYLING CLASSES 
 
-// .title {
-//   margin-bottom: 30px;
-//   font-size: 40px;
-//   line-height: 48px;
-//   color: var(--main-txt);
-// }
-
-// .subtitle {
-//   display: block;
-//   margin-bottom: 15px;
-//   font-size: 16px;
-//   font-weight: 700;
-//   color: var(--accent-mb);
-// }
-
-// .text {
-//   font-size: 16px;
-//   line-height: 28px;
-//   color: var(--second-txt);
-// }
