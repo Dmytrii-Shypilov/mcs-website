@@ -1,4 +1,9 @@
+@import '../../app/mixins.module.scss';
+
 .section {
     padding: 90px 0px;
     height: 600px;
+    @include screen-size(mobile) {
+        padding: 60px 0;
+      }
 }

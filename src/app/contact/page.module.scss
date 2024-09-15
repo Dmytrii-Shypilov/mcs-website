@@ -3,6 +3,9 @@
 .section {
   padding: 60px 0;
   overflow: hidden;
+  @include screen-size(mobile) {
+    padding: 60px 0;
+  }
 }
 
 .wrapper {

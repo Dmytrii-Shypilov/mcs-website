@@ -4,6 +4,10 @@
   padding: 90px 0px;
   background-color: var(--bg-lg);
   overflow: hidden;
+
+  @include screen-size(mobile) {
+    padding: 60px 0;
+  }
 }
 
 .list {
