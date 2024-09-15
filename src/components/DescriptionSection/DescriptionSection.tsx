@@ -1,7 +1,7 @@
 import s from "./description.module.scss";
 
+import Image from "next/image";
 import Container from "../Container/Container";
-import FramedImage from "../ui/FramedImage/FramedImage";
 import Heading from "../Heading/Heading";
 import Transition from "../ui/Transition/Transition";
 
@@ -32,8 +32,8 @@ const DescriptionSection: React.FC = () => {
             </p>
           </Transition>
           <Transition as="div" animate="left">
-            <FramedImage
-           
+            <Image
+            className={s.image}
               alt="dubai-business"
               src="/images/downtown.webp"
               width={500}

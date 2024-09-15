@@ -1,16 +1,34 @@
+@import '../../app/mixins.module.scss';
 
 .section {
   padding: 90px 0px;
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include screen-size(mobile) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  @include screen-size(mobile) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
 }
 
 .textBox {
   width: 520px;
+
+  @include screen-size(mobile) {
+    width: 100%;
+  }
 }
 
 .text {
@@ -20,6 +38,8 @@
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
+
+
 }
 
 

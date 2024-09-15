@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <main className={s.main}>
       <HeroSection />
-      {/* <AboutUsSection/>
+       <AboutUsSection/>
       <OurExpertiseSection/>
-      <DescriptionSection/> */}
+      <DescriptionSection/> 
     </main>
   );
 }

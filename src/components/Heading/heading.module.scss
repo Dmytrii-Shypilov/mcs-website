@@ -1,11 +1,19 @@
+@import '../../app/mixins.module.scss';
+
 .wrapper {
     margin-bottom: 30px;
+ 
 }
 
 .title {
     font-size: 40px;
     line-height: 48px;
     color: var(--main-txt);
+    @include screen-size(mobile) {
+      font-size: 27px;
+      line-height: 27px;
+    }
+
   }
   
   .subtitle {
@@ -14,5 +22,6 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--accent-mb);
+ 
   }
   

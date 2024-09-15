@@ -1,3 +1,5 @@
+@import '../../app/mixins.module.scss';
+
 .card {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,12 @@
   border-radius: 5px;
   background-color: var(--bg-white);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @include screen-size(mobile) {
+    width: 100%;
+    height: 250px;
+    padding: 20px 15px;
+  }
 }
 
 .contacts_list_item {
@@ -28,6 +36,10 @@
   margin-left: 15px;
   font-size: 16px;
   color: var(--second-txt);
+
+  @include screen-size(mobile) {
+    font-size: 14px;
+  }
 }
 
 .icon {

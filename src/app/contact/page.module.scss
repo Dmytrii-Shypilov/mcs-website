@@ -1,5 +1,8 @@
+@import "../../app/mixins.module.scss";
+
 .section {
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -11,6 +14,19 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include screen-size(mobile) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.image {
+  @include screen-size(mobile) {
+    display: none;
+    // width: 320px;
+    // height: auto;
+  }
 }
 
 .textBlock {
@@ -19,6 +35,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include screen-size(mobile) {
+    width: 320px;
+    height: max-content;
+  }
 }
 
 .subtitle {
@@ -43,6 +64,14 @@
   font-size: 16px;
   line-height: 28px;
   color: var(--second-txt);
+  @include screen-size(mobile) {
+    margin-bottom: 30px;
+  }
 }
 
-
+.map {
+  @include screen-size(mobile) {
+    width: 100%;
+    height: 300px;
+  }
+}

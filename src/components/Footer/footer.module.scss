@@ -4,6 +4,7 @@
   // height: 150px;
   background-color: var(--bg-lg);
   border-top: 1px solid var(--neutral-lg);
+  
   @include screen-size(mobile) {
     padding: 20px 0;
   }
@@ -25,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   @include screen-size(mobile) {
     width: 90%;
     margin-bottom: 25px;

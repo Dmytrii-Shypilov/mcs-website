@@ -16,11 +16,12 @@ const Heading: React.FC<HeadingProps> = ({
   animate,
 }) => {
   const Wrapper = animate ? Transition : "div";
+  const aligned = centered? 'center' : 'left'
 
   return (
     <Wrapper className={s.wrapper} animate={animate} as="div">
-      <span className={s.subtitle} style={{textAlign: centered? 'center' : 'left'}}>{subtitle?.toUpperCase()}</span>
-      <h2 className={s.title} style={{textAlign: centered? 'center' : 'left'}}>{title}</h2>
+      <span className={s.subtitle} style={{textAlign: aligned}}>{subtitle?.toUpperCase()}</span>
+      <h2 className={s.title} style={{textAlign: aligned}}>{title}</h2>
     </Wrapper>
   );
 };
