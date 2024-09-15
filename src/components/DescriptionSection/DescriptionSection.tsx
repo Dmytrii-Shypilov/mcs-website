@@ -24,11 +24,7 @@ const DescriptionSection: React.FC = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
               nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
               voluptatem architecto excepturi iste reprehenderit suscipit,
-              adipisci perspiciatis esse consequuntur, accusantium repellat.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
-              voluptatem architecto excepturi iste reprehenderit suscipit,
-              adipisci perspiciatis esse consequuntur, accusantium repellat.
+            
             </p>
           </Transition>
           <Transition as="div" animate="left">
