@@ -20,7 +20,7 @@
 
   @include screen-size(mobile) {
     flex-direction: column;
-    width: 100%;
+   
   }
 }
 
@@ -40,7 +40,7 @@
   justify-content: space-between;
 
   @include screen-size(mobile) {
-    width: 320px;
+    width: 100%;
     height: max-content;
   }
 }
@@ -68,6 +68,7 @@
   line-height: 28px;
   color: var(--second-txt);
   @include screen-size(mobile) {
+    width: 335px;
     margin-bottom: 30px;
   }
 }
