@@ -14,16 +14,21 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
+  @include screen-size(mobile) {
+    justify-content: space-between;
+  }
 }
 
 .nav {
   height: 100%;
   display: flex;
   align-items: center;
+  margin-left: 280px;
 
   @include screen-size(mobile) {
     display: none;
+    margin-left: 0;
   }
 }
 
