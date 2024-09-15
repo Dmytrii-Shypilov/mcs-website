@@ -27,7 +27,7 @@ const DescriptionSection: React.FC = () => {
             
             </p>
           </Transition>
-          <Transition as="div" animate="left">
+          <Transition as="div" animate="opacity" duration={0.8}>
             <Image
             className={s.image}
               alt="dubai-business"

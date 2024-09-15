@@ -10,7 +10,7 @@ const AboutUsSection: React.FC = () => {
     <section className={s.section}>
       <Container>
         <div className={s.wrapper}>
-          <Transition as="div" animate='right'>
+          <Transition as="div" animate='opacity' duration={0.8}>
             <Image
             className={s.image}
               src="/images/talking-persons.webp"
