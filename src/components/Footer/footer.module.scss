@@ -4,7 +4,7 @@
   height: 150px;
   background-color: var(--bg-lg);
   border-top: 1px solid var(--neutral-lg);
-  
+
   @include screen-size(mobile) {
     height: 200px;
     padding: 20px 0;
@@ -79,15 +79,23 @@
     margin-right: 15px;
   }
 
-  // &:hover {
-  //   color: var(--accent-mb);
-  //   transform: translateX(3px);
-  // }
+  @include screen-size(desk-sm) {
+    &:hover {
+      color: var(--accent-mb);
+      transform: translateX(3px);
+    }
+  }
+
+  @include screen-size(desk-lg) {
+    &:hover {
+      color: var(--accent-mb);
+      transform: translateX(3px);
+    }
+  }
 }
 
 // .contacts_list {
 //   display: flex;
-  
 
 //   @include screen-size(mobile) {
 //     flex-direction: column;
