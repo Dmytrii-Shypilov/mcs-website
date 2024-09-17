@@ -6,6 +6,7 @@ import DescriptionSection from "@/components/DescriptionSection/DescriptionSecti
 import OurExpertiseSection from "@/components/OurExpertiseSection/OurExpertiseSection";
 
 
+
 export default function Home() {
   return (
     <main className={s.main}>

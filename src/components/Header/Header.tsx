@@ -29,7 +29,6 @@ const Header: React.FC = () => {
             <Image
               width={112}
               height={40}
-              // style={{ height: 40, width: 112 }}
               alt="mcs-logo"
               src="/images/mcs-logo.webp"
               loading="lazy"
