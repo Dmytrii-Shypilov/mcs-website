@@ -5,6 +5,7 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+    padding-top: 15px;
   
     @include screen-size(mobile) {
       flex-direction: column;
@@ -53,6 +54,7 @@
   }
   
   .service_info {
+    margin-bottom: 10px;
     text-align: center;
     font-size: 16px;
     line-height: 28px;

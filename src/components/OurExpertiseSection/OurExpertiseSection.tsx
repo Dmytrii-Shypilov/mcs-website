@@ -10,7 +10,7 @@ const OurExpertiseSection: React.FC = () => {
       <Container>
         <Heading
           subtitle="OUR EXPERTISE"
-          title="We strive to deliver exclusively tailored services"
+          title="We strive to deliver effectively tailored services"
           animate="up"
           centered={true}
         />
