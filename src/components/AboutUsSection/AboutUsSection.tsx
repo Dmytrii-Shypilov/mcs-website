@@ -28,18 +28,20 @@ const AboutUsSection: React.FC = () => {
               />
               <p className={s.text}>
                 MCS, short for Maria Consultancy Services, is a consultancy
-                brand operating under the umbrella of Maria Group International
-                that was initially established to cater to the needs of the
-                consulting services highly demanded by various companies and
-                organisations
+                brand under the umbrella of MARIA GROUP INTERNATIONAL,
+                originally created to meet the high demand for consulting
+                services across various companies and organizations under MARIA
+                GROUP INTERNATIONAL. Over time, MCS expanded its focus, evolving
+                into a brand serving both corporate and governmental
+                organizations. Now MCS comprises a cluster of companies
+                established in different jurisdictions, each providing
+                specialized services.
               </p>
               <p className={s.text}>
                 At MCS, we place our clients at the core of our operations,
                 aligning our solutions with their unique goals. With a proven
                 track record of successful engagements, we bring both experience
-                and innovative thinking to deliver transformative results. Our
-                commitment extends beyond project completion, offering
-                continuous support for long-term success and sustainability.
+                and innovative thinking to deliver transformative results.
               </p>
               {/* <p className={s.text}>
               We are committed to delivering expert consultancy services that
