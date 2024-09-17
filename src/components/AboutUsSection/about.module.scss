@@ -1,4 +1,4 @@
-@import '../../app/mixins.module.scss';
+@import "../../app/mixins.module.scss";
 
 .section {
   padding: 90px 0px;
@@ -21,6 +21,8 @@
 }
 
 .image {
+  width: 460px;
+  height: 548px;
   @include screen-size(mobile) {
     width: 100%;
     height: auto;
@@ -43,8 +45,4 @@
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
-
-
 }
-
-
