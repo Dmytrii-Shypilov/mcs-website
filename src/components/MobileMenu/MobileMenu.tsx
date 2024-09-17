@@ -13,9 +13,10 @@ type MenuProps = {
   closeMenu: () => void;
   router: AppRouterInstance;
   isMenuOpen: boolean;
+  path: string
 };
 
-const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen }) => {
+const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen, path }) => {
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const [modalRoot, setModalRoot] = useState<HTMLElement | null>(null);
 
@@ -36,6 +37,10 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen }) => {
   const navigateTo = (href: string) => {
     router.push(href);
     closeMenu();
+  };
+
+  const getClass = (href: string) => {
+    return path === href ? s.link_active : s.link;
   };
 
   if (!isMounted || !modalRoot) {
@@ -67,13 +72,13 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen }) => {
             <nav className={s.nav}>
               <ul className={s.nav_list}>
                 <li className={s.nav_list_item}>
-                  <span className={s.link} onClick={() => navigateTo("/")}>
+                  <span className={getClass('/')} onClick={() => navigateTo("/")}>
                     Home
                   </span>
                 </li>
                 <li className={s.nav_list_item}>
                   <span
-                    className={s.link}
+                    className={getClass('/business')}
                     onClick={() => navigateTo("/business")}
                   >
                     Our business
@@ -81,7 +86,7 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen }) => {
                 </li>
                 <li className={s.nav_list_item}>
                   <span
-                    className={s.link}
+                    className={getClass('/contact')}
                     onClick={() => navigateTo("/contact")}
                   >
                     Contact us

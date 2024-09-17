@@ -40,14 +40,18 @@
 }
 
 .nav_list_item {
-  cursor: pointer;
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
-  transition: all 250ms;
 
-  &:hover {
-    color: var(--accent-mb);
-    transform: translateX(3px);
-  }
+}
+
+.link {
+  font-weight: 500;
+  color: var(-main-txt);
+}
+
+.link_active {
+  @extend .link;
+  color: var(--accent-mb);
 }

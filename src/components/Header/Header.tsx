@@ -60,6 +60,7 @@ const Header: React.FC = () => {
         </div>
       </Container>
         <MobileMenu
+        path={path}
           isMenuOpen={isMenuOpen}
           closeMenu={() => setIsMenuOpen(false)}
           router={router}
