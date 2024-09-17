@@ -32,6 +32,7 @@ const Header: React.FC = () => {
               // style={{ height: 40, width: 112 }}
               alt="mcs-logo"
               src="/images/mcs-logo.webp"
+              loading="lazy"
             />
           </Link>
           <nav className={s.nav}>

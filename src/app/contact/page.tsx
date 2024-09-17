@@ -25,6 +25,7 @@ const Contact: React.FC = () => {
                 height={450}
                 src="/images/uae-flag.webp"
                 alt="uae-business"
+                loading="lazy"
               />
             </Transition>
             <Transition as="div" animate="left">
