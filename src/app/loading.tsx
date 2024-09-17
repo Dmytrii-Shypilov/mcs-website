@@ -11,7 +11,7 @@ const Loading: React.FC = () => {
         height={80}
         alt="mcs-logo"
         src="/images/mcs-logo.webp"
-        loading="lazy"
+        priority={true}
       />
       
       <span className={s.loading_text}>Loading . . .</span>
