@@ -11,25 +11,28 @@ const DescriptionSection: React.FC = () => {
       <Container>
         <div className={s.wrapper}>
           <Transition as="div" animate="right" className={s.textBox}>
-            <Heading subtitle="OUR CONCEPT" title="MCS company comprehensive description title"/>
+            <Heading
+              subtitle="our approach"
+              title="MCS: Grounded in Best Practices and Proven Success"
+            />
+            <h3 className={s.name}>VISION</h3>
             <p className={s.text}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
-              voluptatem architecto excepturi iste reprehenderit suscipit,
-              adipisci perspiciatis esse consequuntur, accusantium repellat.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
-              voluptatem architecto excepturi iste reprehenderit suscipit,
-              adipisci perspiciatis esse consequuntur, accusantium repellat.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              nostrum, magnam nobis ducimus unde doloribus. Sequi, cum placeat
-              voluptatem architecto excepturi iste reprehenderit suscipit,
-            
+              We are committed to delivering expert consultancy services that
+              bridge cultural divides, streamline government and corporate
+              interactions, and enable our clients to thrive in the complex and
+              diverse markets of the Middle East and Africa.
+            </p>
+            <h3 className={s.name}>MISSION</h3>
+            <p className={s.text}>
+              Our mission is to connect Western and Far Eastern businesses with
+              the UAE, GCC, and African markets, leveraging our deep expertise
+              in government and corporate relations to create lasting, mutually
+              beneficial partnerships.
             </p>
           </Transition>
           <Transition as="div" animate="opacity" duration={0.8}>
             <Image
-            className={s.image}
+              className={s.image}
               alt="dubai-business"
               src="/images/downtown.webp"
               width={500}

@@ -29,7 +29,7 @@ const AboutUsSection: React.FC = () => {
               initially established to cater to the needs of the consulting
               services highly demanded by various companies and organisations
             </p>
-            <p className={s.text}>
+            {/* <p className={s.text}>
               Our mission is to connect Western and Far Eastern businesses with
               the UAE, GCC, and African markets, leveraging our deep expertise
               in government and corporate relations to create lasting, mutually
@@ -40,7 +40,7 @@ const AboutUsSection: React.FC = () => {
               bridge cultural divides, streamline government and corporate
               interactions, and enable our clients to thrive in the complex and
               diverse markets of the Middle East and Africa.
-            </p>
+            </p> */}
             </div>
             
           </Transition>

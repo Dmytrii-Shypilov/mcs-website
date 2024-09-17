@@ -18,7 +18,8 @@ const HeroSection: React.FC = () => {
             <Transition as="div" animate="right">
               <div className={s.logo}>
                 <Image
-                  width={214}
+                className={s.image}
+                  width={200}
                   height={60}
                   alt="mcs-consultancy-logo"
                   src="/images/mcs-logo.svg"
