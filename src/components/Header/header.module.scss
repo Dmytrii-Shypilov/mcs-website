@@ -39,9 +39,30 @@
 }
 
 .list_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   &:not(:last-of-type) {
     margin-right: 20px;
   }
+ 
+  // &:hover::after {
+  //   opacity: 1;
+  // }
+  //   &::after {
+  //     position: absolute;
+  //     bottom: -1px;
+  //     opacity: 0;
+  //     content: '';
+  //     height: 5px;
+  //     width: 100%;
+  //     background-color: var(--accent-mb);
+  //     transition: all 250ms;
+      
+  // }
+  
 }
 
 .link {

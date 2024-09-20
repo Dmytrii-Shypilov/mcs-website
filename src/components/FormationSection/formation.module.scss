@@ -1,9 +1,114 @@
-@import '../../app/mixins.module.scss';
+@import "../../app/mixins.module.scss";
 
 .section {
-    padding: 90px 0px;
-    height: 900px;
-    @include screen-size(mobile) {
-        padding: 60px 0;
-      }
+  padding: 60px 0px;
+
+  @include screen-size(mobile) {
+    padding: 60px 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  display: block;
+  width: 480px;
+  height: auto;
+}
+
+.textBox {
+  width: 520px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--second-txt);
+  margin-bottom: 30px;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+.icon {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background-color: var(--main-txt);
+}
+
+.service {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-txt)
+}
+
+
+////// Services
+
+.services_section {
+  @extend .section;
+  background-image: url("/images/mcs-logo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bg-lg);
+}
+
+.services_list {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.services_list_item {
+  width: 450px;
+  padding: 20px 25px;
+  border-radius: 5px;
+  background-color: var(--bg-white);
+  box-shadow: rgba(0, 75, 141, 0.3) 0px 1px 2px 0px,
+    rgba(0, 75, 141, 0.15) 0px 2px 6px 2px;
+  transition: box-shadow 250ms;
+
+  &:hover {
+    box-shadow: rgba(0, 75, 141, 0.3) 0px 1px 2px 0px,
+      rgba(0, 75, 141, 0.15) 0px 2px 6px 5px;
+  }
+
+  &:not(:nth-of-type(2n)) {
+    margin-right: calc((100% - 900px));
+  }
+
+  &:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 20px;
+  }
+}
+
+.name_wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 5px solid var(--accent-mb);
+}
+
+.service_name {
+  color: var(--main-txt);
+}
+
+.service_text {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--second-txt);
 }

@@ -17,6 +17,10 @@ const animations = {
     visible: { opacity: 1, x: 0 },
   },
   opacity: { hidden: { opacity: 0 }, visible: { opacity: 1 } },
+  bubble: {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: { opacity: 1, scale: 1 },
+  },
 };
 
 const MotionElement = {
@@ -25,11 +29,12 @@ const MotionElement = {
   h2: motion.h2,
   h3: motion.h3,
   p: motion.p,
+  li: motion.li
 };
 
 type TransitionProps = {
-  as: "h1" | "h2" | "h3" | "div" | "p";
-  animate: "up" | "left" | "right" | "opacity" | undefined;
+  as: "h1" | "h2" | "h3" | "div" | "p" | 'li';
+  animate: "up" | "left" | "right" | "opacity" | 'bubble' | undefined;
   children: React.ReactNode;
   className?: string;
   duration?: number;
