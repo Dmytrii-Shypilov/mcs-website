@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const animations = {
   up: {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
   },
   right: {

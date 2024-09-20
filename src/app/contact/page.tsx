@@ -14,6 +14,7 @@ const Contact: React.FC = () => {
           <Heading
             subtitle="connect with us"
             title="We are Committed to Your Success"
+            animate="opacity"
             centered={true}
           />
 

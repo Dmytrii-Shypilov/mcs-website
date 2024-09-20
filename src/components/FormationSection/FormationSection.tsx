@@ -3,6 +3,7 @@ import s from "./formation.module.scss";
 import Heading from "../Heading/Heading";
 import Container from "../Container/Container";
 import Image from "next/image";
+import Transition from "../ui/Transition/Transition";
 
 const FormationSection: React.FC = () => {
   return (
@@ -10,20 +11,21 @@ const FormationSection: React.FC = () => {
       <section className={s.section} id='formation'>
         <Container>
           <Heading
-            animate="up"
+            animate="opacity"
             subtitle="corporate services"
             title="Tailored Corporate Solutions for Your Business Needs"
             centered={true}
           />
           <div className={s.wrapper}>
-            <Image
+            <Transition as='div' animate="opacity" duration={0.7}> <Image
               src="/images/corporate-office.webp"
               className={s.image}
               width={480}
               height={376}
               alt="corporate dubai"
-            />
-            <div className={s.textBox}>
+            /></Transition>
+           
+            <Transition as='div' animate="opacity" duration={0.8} className={s.textBox}>
               <p className={s.text}>
                 At MCS, we understand that every business is unique, which is
                 why our corporate solutions are personalized to suit your
@@ -39,14 +41,14 @@ const FormationSection: React.FC = () => {
               <li className={s.list_item}><span className={s.icon}></span><span className={s.service}>Opening Potential Clients and Markets</span></li>
               <li className={s.list_item}><span className={s.icon}></span><span className={s.service}>Introduction to Private Equity and Venture Capital</span></li>
              </ul>
-            </div>
+            </Transition>
           </div>
         </Container>
       </section>
       <section className={s.services_section}>
         <Container>
           <ul className={s.services_list}>
-            <li className={s.services_list_item}>
+            <Transition as='li' animate='bubble' className={s.services_list_item}>
               <div className={s.name_wrapper}>
                 <h3 className={s.service_name}>Company Representation</h3>
               </div>
@@ -59,8 +61,8 @@ const FormationSection: React.FC = () => {
                 partnerships between Western and Far Eastern companies and
                 regional stakeholders.
               </p>
-            </li>
-            <li className={s.services_list_item}>
+            </Transition>
+            <Transition as='li' animate='bubble' className={s.services_list_item}>
               <div className={s.name_wrapper}>
                 <h3 className={s.service_name}>Company Formation Worldwide</h3>
               </div>
@@ -71,8 +73,8 @@ const FormationSection: React.FC = () => {
                 launch, MCS ensures a smooth and compliant entry into global
                 markets.
               </p>
-            </li>
-            <li className={s.services_list_item}>
+            </Transition>
+            <Transition as='li' animate='bubble' className={s.services_list_item}>
               <div className={s.name_wrapper}>
                 <h3 className={s.service_name}>
                   Opening Potential Clients and Markets
@@ -85,8 +87,8 @@ const FormationSection: React.FC = () => {
                 helps clients unlock potential in untapped regions or
                 industries.
               </p>
-            </li>
-            <li className={s.services_list_item}>
+            </Transition>
+            <Transition as='li' animate='bubble' className={s.services_list_item}>
               <div className={s.name_wrapper}>
                 <h3 className={s.service_name}>
                   Introduction to Private Equity and Venture Capital
@@ -99,7 +101,7 @@ const FormationSection: React.FC = () => {
                 partnerships that drive business growth and long-term financial
                 success.
               </p>
-            </li>
+            </Transition>
           </ul>
         </Container>
       </section>

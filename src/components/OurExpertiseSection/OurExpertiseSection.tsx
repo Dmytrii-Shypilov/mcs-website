@@ -11,7 +11,7 @@ const OurExpertiseSection: React.FC = () => {
         <Heading
           subtitle="OUR EXPERTISE"
           title="We strive to deliver effectively tailored services"
-          animate="up"
+          animate="opacity"
           centered={true}
         />
         <ExpertiseList />
