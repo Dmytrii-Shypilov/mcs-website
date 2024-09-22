@@ -31,7 +31,7 @@ const Header: React.FC = () => {
               height={40}
               alt="mcs-logo"
               src="/images/mcs-logo.webp"
-              loading="lazy"
+              priority={true}
             />
           </Link>
           <nav className={s.nav}>

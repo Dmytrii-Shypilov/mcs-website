@@ -8,7 +8,7 @@ import Transition from "../ui/Transition/Transition";
 const FormationSection: React.FC = () => {
   return (
     <>
-      <section className={s.section} id="formation">
+      <section className={s.section} id="corporate">
         <Container>
           <Heading
             animate="opacity"
@@ -18,13 +18,13 @@ const FormationSection: React.FC = () => {
           />
           <div className={s.wrapper}>
             <Transition as="div" animate="opacity" duration={0.7}>
-              {" "}
               <Image
                 src="/images/corporate-office.webp"
                 className={s.image}
                 width={480}
                 height={376}
                 alt="corporate dubai"
+               priority={true}
               />
             </Transition>
 

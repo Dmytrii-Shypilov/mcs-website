@@ -17,7 +17,7 @@ const BusinessCard: React.FC = () => {
         />
       </span>
       <div>
-        <span className={s.company_name}>MCS Consultancy LLC</span>
+        <span className={s.company_name}>MGI Consultancy LLC</span>
         <ul className={s.contacts_list}>
           <li className={s.contacts_list_item}>
             <span className={s.icon}>

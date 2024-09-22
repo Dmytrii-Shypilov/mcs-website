@@ -1,10 +1,12 @@
+import { div } from "framer-motion/client";
 import s from "./page.module.scss";
 
 import Image from "next/image";
 
 const Loading: React.FC = () => {
   return (
-    <div className={s.loading}>
+   
+<div className={s.loading}>
       <Image
         className={s.loading_img}
         width={224}
@@ -18,6 +20,8 @@ const Loading: React.FC = () => {
      
       
     </div>
+  
+    
   );
 };
 

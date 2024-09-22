@@ -1,0 +1,28 @@
+@import '../../app/mixins.module.scss';
+
+.section {
+  padding: 90px 0px;
+  overflow: hidden;
+
+  @include screen-size(mobile) {
+    padding: 60px 0;
+  }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textBox {
+    width: 520px;
+    @include screen-size(mobile) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--second-txt);
+  }

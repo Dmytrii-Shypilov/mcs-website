@@ -1,7 +1,7 @@
 import s from "./page.module.scss";
 
 import FormationSection from "@/components/FormationSection/FormationSection";
-import Transition from "@/components/ui/Transition/Transition";
+import GovernmentSection from "@/components/GovernmentSection/GovernmentSection";
 
 const Business: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ const Business: React.FC = () => {
         </Transition>
       </div> */}
     <FormationSection/>
+    <GovernmentSection/>
       {/* <section id="company-formation" style={{ height: 600 }}>
         <h1>Business</h1>
       </section>

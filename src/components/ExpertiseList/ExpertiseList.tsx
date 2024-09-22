@@ -24,7 +24,7 @@ const ExpertiseList: React.FC = () => {
           of businesses seeking to establish or expand their presence in the
           Middle East and Africa.
         </p>
-        <ArrowLinkButton linkTo="/business#company-formation" />
+        <ArrowLinkButton linkTo="/business#corporate" />
       </Transition>
       <Transition
         as="li"
@@ -43,7 +43,7 @@ const ExpertiseList: React.FC = () => {
           interactions between businesses and government entities in the UAE,
           GCC, and Africa
         </p>
-        <ArrowLinkButton linkTo="/business#corporate-services" />
+        <ArrowLinkButton linkTo="/business#government" />
       </Transition>
       <Transition
         as="li"
