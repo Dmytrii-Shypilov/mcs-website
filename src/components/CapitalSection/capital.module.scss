@@ -1,0 +1,40 @@
+@import "../../app/mixins.module.scss";
+
+.section {
+  padding: 60px 0;
+  overflow: hidden;
+  @include screen-size(mobile) {
+    padding: 60px 0;
+  }
+}
+
+.imageBox {
+  width: 100%;
+  display: flex;
+  
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.textBox {
+  width: 100%;
+
+
+}
+
+
+.text {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--second-txt);
+    &:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+  }
+
+// .image {
+//   &:not(:last-of-type) {
+//     margin-right: 15px;
+//   }
+// }
