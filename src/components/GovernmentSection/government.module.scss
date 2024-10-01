@@ -12,6 +12,15 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
+    @include screen-size(mobile) {
+      flex-direction: column-reverse;
+    }
+}
+
+.image {
+  @include screen-size(mobile) {
+    width: 100%;
+  }
 }
 
 .textBox {

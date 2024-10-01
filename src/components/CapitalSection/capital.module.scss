@@ -17,10 +17,17 @@
   margin-bottom: 30px;
 }
 
+.image {
+  @include screen-size(mobile) {
+    width: 100%;
+    &:first-of-type {
+      display: none;
+    }
+  }
+}
+
 .textBox {
   width: 100%;
-
-
 }
 
 
@@ -33,8 +40,3 @@
     }
   }
 
-// .image {
-//   &:not(:last-of-type) {
-//     margin-right: 15px;
-//   }
-// }
