@@ -3,6 +3,7 @@ import s from "./capital.module.scss";
 import Heading from "../Heading/Heading";
 import Image from "next/image";
 import Container from "../Container/Container";
+import Transition from "../ui/Transition/Transition";
 
 const CapitalSection: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const CapitalSection: React.FC = () => {
           title="Prompt your growth by forging strategic alliances"
           centered={true}
         />
-        <div className={s.imageBox}>
+        <Transition as="div" animate="opacity" className={s.imageBox}>
           <Image
             className={s.image}
             src="/images/investment-key.webp"
@@ -28,11 +29,8 @@ const CapitalSection: React.FC = () => {
             height={400}
             alt="dubai venture capital"
           />
-        </div>
-        <div className={s.textWrapper}>
-          {/* <div className={s.citation}>
-      <p>&quot; Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort &quot; Franklin D. Roosevelt</p>
-    </div> */}
+        </Transition>
+        <Transition as='div' animate="opacity" className={s.textWrapper}>
           <div className={s.textBox}>
             <p className={s.text}>
               In the dynamic world of business, securing capital is paramount
@@ -66,7 +64,7 @@ const CapitalSection: React.FC = () => {
               long-term goals.
             </p>
           </div>
-        </div>
+        </Transition>
       </Container>
     </section>
   );
