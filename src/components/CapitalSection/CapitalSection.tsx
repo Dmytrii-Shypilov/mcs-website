@@ -30,7 +30,7 @@ const CapitalSection: React.FC = () => {
             alt="dubai venture capital"
           />
         </Transition>
-        <Transition as='div' animate="opacity" className={s.textWrapper}>
+        <Transition as='div' animate="up" className={s.textWrapper}>
           <div className={s.textBox}>
             <p className={s.text}>
               In the dynamic world of business, securing capital is paramount
