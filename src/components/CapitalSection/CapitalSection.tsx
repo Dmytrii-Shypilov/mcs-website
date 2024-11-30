@@ -9,11 +9,14 @@ const CapitalSection: React.FC = () => {
   return (
     <section className={s.section}>
       <Container>
-        <Heading
-          subtitle="Capital Acquisition Facilitation"
-          title="Prompt your growth by forging strategic alliances"
-          centered={true}
-        />
+        <Transition as="div" animate="opacity">
+          <Heading
+            subtitle="Capital Acquisition Facilitation"
+            title="Prompt your growth by forging strategic alliances"
+            centered={true}
+          />
+        </Transition>
+
         <Transition as="div" animate="opacity" className={s.imageBox}>
           <Image
             className={s.image}
@@ -30,7 +33,7 @@ const CapitalSection: React.FC = () => {
             alt="dubai venture capital"
           />
         </Transition>
-        <Transition as='div' animate="up" className={s.textWrapper}>
+        <Transition as="div" animate="up" className={s.textWrapper}>
           <div className={s.textBox}>
             <p className={s.text}>
               In the dynamic world of business, securing capital is paramount
