@@ -3,6 +3,7 @@
 .section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: var(--bg-lg);
   @include screen-size(mobile) {
     padding: 60px 0;
   }
@@ -11,7 +12,7 @@
 .imageBox {
   width: 100%;
   display: flex;
-  
+
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -30,13 +31,33 @@
   width: 100%;
 }
 
+.textWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
 
 .text {
-    font-size: 16px;
-    line-height: 28px;
-    color: var(--second-txt);
-    &:not(:last-of-type) {
-        margin-bottom: 15px;
-    }
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--second-txt);
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
   }
+}
 
+.citation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-txt);
+  background-color: lightgrey;
+  border-radius: 20px;
+  // background-color: var(--accent-lb);
+}

@@ -4,6 +4,7 @@ import Heading from "../Heading/Heading";
 import Container from "../Container/Container";
 import Image from "next/image";
 import Transition from "../ui/Transition/Transition";
+import { Icons } from "../ui/icons/icons";
 
 const FormationSection: React.FC = () => {
   return (
@@ -45,21 +46,21 @@ const FormationSection: React.FC = () => {
               </p>
               <ul>
                 <li className={s.list_item}>
-                  <span className={s.icon}></span>
+                  <span className={s.icon}><Icons.IconArrowCircle/></span>
                   <span className={s.service}>Company Representation</span>
                 </li>
                 <li className={s.list_item}>
-                  <span className={s.icon}></span>
+                  <span className={s.icon}><Icons.IconArrowCircle/></span>
                   <span className={s.service}>Company Formation Worldwide</span>
                 </li>
                 <li className={s.list_item}>
-                  <span className={s.icon}></span>
+                  <span className={s.icon}><Icons.IconArrowCircle/></span>
                   <span className={s.service}>
                     Opening Potential Clients and Markets
                   </span>
                 </li>
                 <li className={s.list_item}>
-                  <span className={s.icon}></span>
+                  <span className={s.icon}><Icons.IconArrowCircle/></span>
                   <span className={s.service}>
                     Introduction to Private Equity and Venture Capital
                   </span>

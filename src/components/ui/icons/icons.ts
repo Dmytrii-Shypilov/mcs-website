@@ -11,6 +11,7 @@ import IconMenu from "./IconMenu";
 import IconClose from "./IconClose";
 import IconDownload from "./IconDownload";
 import IconLocation from "./IconLocation";
+import IconArrowCircle from "./IconArrowCircle";
 
 
 export const Icons = {
@@ -26,5 +27,6 @@ export const Icons = {
   IconMenu,
   IconClose,
   IconDownload,
-  IconLocation
+  IconLocation,
+  IconArrowCircle
 };

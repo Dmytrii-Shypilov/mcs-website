@@ -3,7 +3,7 @@
 .section {
   padding: 90px 0px;
   overflow: hidden;
-
+ 
   @include screen-size(mobile) {
     padding: 60px 0;
   }
@@ -33,5 +33,9 @@
   .text {
     font-size: 16px;
     line-height: 28px;
+    height: max-content;
     color: var(--second-txt);
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
   }

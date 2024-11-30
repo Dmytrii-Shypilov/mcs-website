@@ -29,28 +29,43 @@ const CapitalSection: React.FC = () => {
             alt="dubai venture capital"
           />
         </div>
-
-        <div className={s.textBox}>
-      
-         
-          <p className={s.text}>
-            In the dynamic world of business, securing capital is paramount for
-            driving innovation and expansion. At MCS, we specialize in providing
-            unparalleled support services tailored to the unique needs of
-            Private Equity Firms, Venture Capitalists, and potential investors
-            including Private Family Offices and corporations.  
-          </p>
-          <p className={s.text}>With years of
-            experience in the industry, MCS excels in facilitating introductions
-            and connections that align with our clients&apos; objectives. Our
-            dedicated team is adept at navigating the complexities of
-            fundraising to ensure optimal outcomes for all parties involved.</p>
-          <p className={s.text}>At
-            MCS, we understand the importance of confidentiality and prioritize
-            client satisfaction above all else. We believe in fostering enduring
-            partnerships built on trust and transparency, ensuring that our
-            clients feel confident and supported throughout the entire process.</p>
-            
+        <div className={s.textWrapper}>
+          {/* <div className={s.citation}>
+      <p>&quot; Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort &quot; Franklin D. Roosevelt</p>
+    </div> */}
+          <div className={s.textBox}>
+            <p className={s.text}>
+              In the dynamic world of business, securing capital is paramount
+              for driving innovation and expansion. At MCS, we specialize in
+              providing unparalleled support services tailored to the unique
+              needs of Private Equity Firms, Venture Capitalists, and potential
+              investors including Private Family Offices and corporations.
+            </p>
+            <p className={s.text}>
+              With years of experience in the industry, MCS excels in
+              facilitating introductions and connections that align with our
+              clients&apos; objectives. Our dedicated team is adept at
+              navigating the complexities of fundraising to ensure optimal
+              outcomes for all parties involved.
+            </p>
+            <p className={s.text}>
+              At MCS, we understand the importance of confidentiality and
+              prioritize client satisfaction above all else. We believe in
+              fostering enduring partnerships built on trust and transparency,
+              ensuring that our clients feel confident and supported throughout
+              the entire process.
+            </p>
+            <p className={s.text}>
+              In addition to connecting businesses with investors, MCS provides
+              strategic advisory services to help clients present compelling
+              investment opportunities. Our expertise spans market analysis,
+              financial structuring, and crafting persuasive business cases that
+              resonate with potential investors. By leveraging our global
+              network and deep industry knowledge, we empower our clients to
+              secure the capital needed to fuel their growth and achieve their
+              long-term goals.
+            </p>
+          </div>
         </div>
       </Container>
     </section>

@@ -52,18 +52,19 @@
 
 .icon {
   display: block;
-  width: 7px;
-  height: 7px;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
   margin-right: 10px;
-  background-color: var(--main-txt);
+  fill: var(--accent-mb)
 }
 
 .service {
   font-size: 18px;
   font-weight: 500;
-  color: var(--main-txt)
+  color: var(--main-txt);
 }
-
 
 ////// Services
 
