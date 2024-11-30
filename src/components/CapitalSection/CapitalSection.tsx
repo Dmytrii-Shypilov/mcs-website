@@ -7,7 +7,7 @@ import Transition from "../ui/Transition/Transition";
 
 const CapitalSection: React.FC = () => {
   return (
-    <section className={s.section}>
+    <section id='capital' className={s.section}>
       <Container>
         <Transition as="div" animate="opacity">
           <Heading

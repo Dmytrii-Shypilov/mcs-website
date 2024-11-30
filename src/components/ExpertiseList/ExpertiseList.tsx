@@ -60,7 +60,7 @@ const ExpertiseList: React.FC = () => {
           businesses with potential investors and financial institutions to
           support their growth ambitions.
         </p>
-        <ArrowLinkButton linkTo="/business#capital-acquisition" />
+        <ArrowLinkButton linkTo="/business#capital" />
       </Transition>
     </ul>
   );

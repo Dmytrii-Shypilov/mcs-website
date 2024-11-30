@@ -43,12 +43,6 @@ const AboutUsSection: React.FC = () => {
                 track record of successful engagements, we bring both experience
                 and innovative thinking to deliver transformative results.
               </p>
-              {/* <p className={s.text}>
-              We are committed to delivering expert consultancy services that
-              bridge cultural divides, streamline government and corporate
-              interactions, and enable our clients to thrive in the complex and
-              diverse markets of the Middle East and Africa.
-            </p> */}
             </div>
           </Transition>
         </div>
