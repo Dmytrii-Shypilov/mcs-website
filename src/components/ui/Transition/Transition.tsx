@@ -29,12 +29,13 @@ const MotionElement = {
   h2: motion.h2,
   h3: motion.h3,
   p: motion.p,
-  li: motion.li
+  ul: motion.ul,
+  li: motion.li,
 };
 
 type TransitionProps = {
-  as: "h1" | "h2" | "h3" | "div" | "p" | 'li';
-  animate: "up" | "left" | "right" | "opacity" | 'bubble' | undefined;
+  as: "h1" | "h2" | "h3" | "div" | "p" | "ul" | "li";
+  animate: "up" | "left" | "right" | "opacity" | "bubble" | undefined;
   children: React.ReactNode;
   className?: string;
   duration?: number;

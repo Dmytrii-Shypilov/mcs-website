@@ -1,0 +1,23 @@
+@import "../../app/mixins.module.scss";
+
+
+.section {
+    padding: 90px 0px;
+    background-color: var(--bg-lg);
+}
+
+.partners_list {
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    @include screen-size(mobile) {
+        flex-direction: column;
+    }
+}
+
+// .partners_list_item {
+//     // position: relative;
+    
+// }

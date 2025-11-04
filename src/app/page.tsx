@@ -4,8 +4,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutUsSection from "@/components/AboutUsSection/AboutUsSection";
 import DescriptionSection from "@/components/DescriptionSection/DescriptionSection";
 import OurExpertiseSection from "@/components/OurExpertiseSection/OurExpertiseSection";
-
-
+import PartnersSection from "@/components/PartnersSection/PartnersSection";
 
 export default function Home() {
   return (
@@ -13,7 +12,8 @@ export default function Home() {
       <HeroSection />
        <AboutUsSection/>
       <OurExpertiseSection/>
-      <DescriptionSection/> 
+      <DescriptionSection/>
+      {/* <PartnersSection/>  */}
     </main>
   );
 }

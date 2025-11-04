@@ -20,7 +20,7 @@ const Heading: React.FC<HeadingProps> = ({
 
   return (
     <Wrapper className={s.wrapper} animate={animate} as="div">
-      <span className={s.subtitle} style={{textAlign: aligned}}>{subtitle?.toUpperCase()}</span>
+      {subtitle && <span className={s.subtitle} style={{textAlign: aligned}}>{subtitle?.toUpperCase()}</span>}
       <h2 className={s.title} style={{textAlign: aligned}}>{title}</h2>
     </Wrapper>
   );

@@ -6,7 +6,7 @@ import CapitalSection from "@/components/CapitalSection/CapitalSection";
 
 const Business: React.FC = () => {
   return (
-    <main style={{ scrollBehavior: "smooth" }}>
+    <main>
       <FormationSection />
       <GovernmentSection />
       <CapitalSection />
