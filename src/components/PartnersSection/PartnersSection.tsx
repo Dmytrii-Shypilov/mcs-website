@@ -18,7 +18,7 @@ const PartnersSection = () => {
           animate="opacity"
         />
         <Transition duration={0.8} as="div" animate="opacity">
-          <div style={{padding: '30px 0px'}}>
+          <div style={{padding: '40px 0px'}}>
             <HorizontalScroller />
           </div>
 
