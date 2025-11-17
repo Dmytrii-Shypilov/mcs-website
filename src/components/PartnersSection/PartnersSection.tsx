@@ -5,6 +5,7 @@ import Link from "next/link";
 import Container from "../Container/Container";
 import Heading from "../Heading/Heading";
 import Transition from "../ui/Transition/Transition";
+import HorizontalScroller from "../HorizontalScroller/HorizontalScroller";
 
 const PartnersSection = () => {
   return (
@@ -17,7 +18,11 @@ const PartnersSection = () => {
           animate="opacity"
         />
         <Transition duration={0.8} as="div" animate="opacity">
-          <ul className={s.partners_list}>
+          <div style={{padding: '30px 0px'}}>
+            <HorizontalScroller />
+          </div>
+
+          {/* <ul className={s.partners_list}>
             <li className={s.partners_list_item}>
               <Link href='https://ciceres.com/'>
                 <Image
@@ -39,7 +44,7 @@ const PartnersSection = () => {
                 </Link>
            
             </li>
-          </ul>
+          </ul> */}
         </Transition>
       </Container>
     </section>
