@@ -31,6 +31,22 @@ const ExpandableHeader: React.FC = () => {
 
   const router = useRouter();
 
+  // PROGRAMMATIC MEDIA QUERY
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 468px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const onMediaChange = (event: MediaQueryListEvent) => {
+      if (event.matches) setIsMobile(true);
+    };
+
+    mediaQuery.addEventListener("change", onMediaChange);
+
+    return () => mediaQuery.removeEventListener("change", onMediaChange);
+  }, []);
+
+
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
   }, [isMenuOpen]);
@@ -173,7 +189,9 @@ const ExpandableHeader: React.FC = () => {
                             const subClassName = `${s.subtitle} + ${
                               s.clickable
                             } + ${
-                              sub.name === menu.subsection && !isMobile? s.active : ""
+                              sub.name === menu.subsection && !isMobile
+                                ? s.active
+                                : ""
                             }`;
                             return (
                               <div className={s.subtitle_wrap} key={sub.name}>
@@ -214,7 +232,9 @@ const ExpandableHeader: React.FC = () => {
                     {subMenuContent.map((sec) => {
                       const className = `${s.submenu_list_item} + ${
                         s.clickable
-                      } + ${menu.slide === sec.name && !isMobile ? s.active : ""}`;
+                      } + ${
+                        menu.slide === sec.name && !isMobile ? s.active : ""
+                      }`;
                       return (
                         <li
                           className={className}
