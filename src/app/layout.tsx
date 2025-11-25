@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.scss";
 
 import Header from "@/components/Header/Header";
+import ExpandableHeader from "@/components/ExpandableHeader/ExpandableHeader";
 import Footer from "@/components/Footer/Footer";
 import ScrollUpButton from "@/components/ui/ScrollUpButton/ScrollUpButton";
 
@@ -30,7 +31,8 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <div id="modal-root"></div>
-        <Header />
+        {/* <Header /> */}
+        <ExpandableHeader/>
         {children}
         <Footer />
         <ScrollUpButton />

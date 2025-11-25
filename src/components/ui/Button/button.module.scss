@@ -12,9 +12,9 @@
         left: 0;
     }
 
-    &:hover {
-        transform: translateY(-3px)
-    }
+   //  &:hover {
+   //      transform: translateY(-3px)
+   //  }
  }
 
  .text {
@@ -22,7 +22,7 @@
     z-index:1;
     font-size: 16px;
     color: var(--light-txt);
-    
+
  }
 
  .wrapper {

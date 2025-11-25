@@ -12,6 +12,8 @@ import IconClose from "./IconClose";
 import IconDownload from "./IconDownload";
 import IconLocation from "./IconLocation";
 import IconArrowCircle from "./IconArrowCircle";
+import IconArrowAnimated from "./IconArrowAnimated/IconArrowAnimated";
+import { IconBurger } from "./IconBurger";
 
 
 export const Icons = {
@@ -28,5 +30,7 @@ export const Icons = {
   IconClose,
   IconDownload,
   IconLocation,
-  IconArrowCircle
+  IconArrowCircle,
+  IconArrowAnimated,
+  IconBurger
 };
