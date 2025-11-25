@@ -15,6 +15,11 @@
     background-color: white;
     z-index: 2;
   }
+
+  @include screen-size(mobile) {
+    top:25px;
+    left: 25px;
+  }
 }
 
 .header_nav_gen {
