@@ -168,7 +168,7 @@ const ExpandableHeader: React.FC = () => {
                     const className = `${s.main_title} + ${
                       !el.complex ? s.clickable : ""
                     } + ${
-                      el.section === menu.section && !el.complex ? s.active : ""
+                      el.section === menu.section && !el.complex && !isMobile? s.active : ""
                     }`;
 
                     return (
@@ -257,7 +257,7 @@ const ExpandableHeader: React.FC = () => {
                     <span
                       className={s.back_icon}
                       onClick={() =>
-                        onSlideClose(Boolean(sectionContent.slides.length))
+                        onSlideClose(Boolean(sectionContent.slides.length || Boolean(sectionContent.subsections.length)))
                       }
                     >
                       <Icons.IconArrowRight
