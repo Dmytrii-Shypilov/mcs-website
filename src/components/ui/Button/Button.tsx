@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, icon, linkTo }) => {
     <button className={s.btn} onClick={linkTo && !onClick ? ()=> router.push('/business') : onClick}>
       <div className={s.wrapper}>
         <span className={s.overlay}></span>
-        <span className={s.text}>{children}</span>
+        <span  className={s.text}>{children}</span>
         {icon && icon}
       </div>
     </button>

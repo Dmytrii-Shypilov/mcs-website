@@ -1,3 +1,5 @@
+@import "../../app/mixins.module.scss";
+
 .header {
   position: fixed;
   top: 50px;
@@ -11,7 +13,7 @@
     width: 100%;
     transition: all 300ms;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
@@ -55,7 +57,7 @@
   display: flex;
   top: 65px;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: calc(100vh - 65px);
   overflow: hidden;
@@ -91,6 +93,11 @@
       border-bottom: 1px solid var(--border-col);
     }
   }
+  @include screen-size(mobile) {
+    width: 100%;
+  }
+    
+  
 }
 
 .main_title_wrap {
@@ -128,6 +135,9 @@
   width: 30%;
   height: 100%;
   // border-right: 1px solid black;
+    @include screen-size(mobile) {
+    width: 100%;
+  }
 }
 
 .submenu_head {
@@ -169,6 +179,9 @@
   align-items: center;
   width: 40%;
   background-color: rgb(234, 224, 224);
+    @include screen-size(mobile) {
+    width: 100%;
+  }
 }
 
 .slide_content {

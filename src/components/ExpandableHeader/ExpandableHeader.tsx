@@ -94,6 +94,7 @@ const ExpandableHeader: React.FC = () => {
       subsection: MenuStructure[0].subsections[0].name,
       slide: MenuStructure[0].subsections[0].slides[0].name,
     });
+    setMobileView('main')
   };
 
   const onSectionSelect = (name: string, isComplex: boolean) => {
@@ -252,6 +253,7 @@ const ExpandableHeader: React.FC = () => {
               {isSlideInView && (
                 <div className={s.slide}>
                   {isMobile && (
+                    <div className={s.submenu_head}>
                     <span
                       className={s.back_icon}
                       onClick={() =>
@@ -262,6 +264,7 @@ const ExpandableHeader: React.FC = () => {
                         style={{ transform: "rotate(180deg)" }}
                       />
                     </span>
+                    </div>
                   )}
                   <div className={s.slide_content}>
                     <div className={s.slide_image}>
