@@ -98,7 +98,7 @@ const ExpandableHeader: React.FC = () => {
   };
 
   const onSectionSelect = (name: string, isComplex: boolean) => {
-    if (name !== menu.section) {
+ 
       if (isComplex) return;
       const section = MenuStructure.filter((sec) => sec.section === name)[0];
       const sectionSlides = section.slides;
@@ -108,7 +108,7 @@ const ExpandableHeader: React.FC = () => {
         slide: sectionSlides.length ? sectionSlides[0].name : null,
       });
       setMobileView(section.slides.length ? "submenu" : "slide");
-    }
+    
   };
 
   const onSubsectionSelect = (context: string, name: string) => {
