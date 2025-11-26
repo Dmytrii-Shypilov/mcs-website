@@ -46,7 +46,6 @@ const ExpandableHeader: React.FC = () => {
     return () => mediaQuery.removeEventListener("change", onMediaChange);
   }, []);
 
-
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
   }, [isMenuOpen]);
@@ -94,11 +93,11 @@ const ExpandableHeader: React.FC = () => {
       subsection: MenuStructure[0].subsections[0].name,
       slide: MenuStructure[0].subsections[0].slides[0].name,
     });
-    setMobileView('main')
+    setMobileView("main");
   };
 
   const onSectionSelect = (name: string, isComplex: boolean) => {
- 
+    if (name !== menu.section || isMobile) {
       if (isComplex) return;
       const section = MenuStructure.filter((sec) => sec.section === name)[0];
       const sectionSlides = section.slides;
@@ -108,7 +107,7 @@ const ExpandableHeader: React.FC = () => {
         slide: sectionSlides.length ? sectionSlides[0].name : null,
       });
       setMobileView(section.slides.length ? "submenu" : "slide");
-    
+    }
   };
 
   const onSubsectionSelect = (context: string, name: string) => {
@@ -168,7 +167,9 @@ const ExpandableHeader: React.FC = () => {
                     const className = `${s.main_title} + ${
                       !el.complex ? s.clickable : ""
                     } + ${
-                      el.section === menu.section && !el.complex && !isMobile? s.active : ""
+                      el.section === menu.section && !el.complex && !isMobile
+                        ? s.active
+                        : ""
                     }`;
 
                     return (
@@ -254,16 +255,21 @@ const ExpandableHeader: React.FC = () => {
                 <div className={s.slide}>
                   {isMobile && (
                     <div className={s.submenu_head}>
-                    <span
-                      className={s.back_icon}
-                      onClick={() =>
-                        onSlideClose(Boolean(sectionContent.slides.length || Boolean(sectionContent.subsections.length)))
-                      }
-                    >
-                      <Icons.IconArrowRight
-                        style={{ transform: "rotate(180deg)" }}
-                      />
-                    </span>
+                      <span
+                        className={s.back_icon}
+                        onClick={() =>
+                          onSlideClose(
+                            Boolean(
+                              sectionContent.slides.length ||
+                                Boolean(sectionContent.subsections.length)
+                            )
+                          )
+                        }
+                      >
+                        <Icons.IconArrowRight
+                          style={{ transform: "rotate(180deg)" }}
+                        />
+                      </span>
                     </div>
                   )}
                   <div className={s.slide_content}>
