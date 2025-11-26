@@ -86,13 +86,11 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  // height: fit-content;
   border-right: 1px solid var(--border-col);
   &_item {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    // height: fit-content;
     padding: 0 25px;
     &:not(:last-of-type) {
       border-bottom: 1px solid var(--border-col);
@@ -121,6 +119,8 @@
   padding: 0px 10px;
   cursor: pointer;
   border-radius: 6px;
+    user-select: none;
+
 }
 
 .subtitle {
@@ -132,6 +132,8 @@
   padding: 10px 25px;
   border-radius: 6px;
   cursor: pointer;
+    user-select: none;
+
 }
 
 .submenu {
@@ -152,6 +154,8 @@
   padding: 15px 25px;
   font-size: 20px;
   border-bottom: 1px solid var(--border-col);
+    user-select: none;
+
 }
 
 .back_icon {
@@ -176,6 +180,7 @@
   font-size: 20px;
   padding: 10px 10px;
   border-radius: 10px;
+  user-select: none;
 }
 
 .slide {
