@@ -17,8 +17,8 @@ const ExpandableHeader: React.FC = () => {
     slide: string | null;
   }>({
     section: MenuStructure[0].section,
-    subsection: MenuStructure[0].subsections[0].name,
-    slide: MenuStructure[0].subsections[0].slides[0].name,
+    subsection: MenuStructure[0].subsections[0] ? MenuStructure[0].subsections[0].name : null,
+    slide: MenuStructure[0].subsections[0] ? MenuStructure[0].subsections[0].slides[0].name : null,
   });
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [mobileView, setMobileView] = useState<"main" | "submenu" | "slide">(
@@ -90,8 +90,8 @@ const ExpandableHeader: React.FC = () => {
     setIsMenuOpened(!isMenuOpen);
     setMenu({
       section: MenuStructure[0].section,
-      subsection: MenuStructure[0].subsections[0].name,
-      slide: MenuStructure[0].subsections[0].slides[0].name,
+      subsection: MenuStructure[0].subsections[0] ? MenuStructure[0].subsections[0].name : null,
+      slide:MenuStructure[0].subsections[0] ? MenuStructure[0].subsections[0].slides[0].name : MenuStructure[0].slides[0]?.name,
     });
     setMobileView("main");
   };

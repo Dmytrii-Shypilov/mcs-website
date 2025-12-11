@@ -1,6 +1,29 @@
-// HEADER MENU STRUCTURE 
+// HEADER MENU STRUCTURE
 
 export const MenuStructure = [
+  {
+    section: "Industries Fur",
+    complex: false,
+    subsections: [],
+    slides: [
+          {
+            name: "Slide 11222",
+            content: {
+              image: "/images/skyline.webp",
+              text: "Our aerospace and defense experts help industry players navigate their day-to-day operations and identify ways they can innovate for the future.",
+            },
+          },
+          {
+            name: "Slide 223333",
+            content: {
+              image: "/images/skyline.webp",
+              text: "Our aerospace and defense experts help industry players navigate their day-to-day operations and identify ways they can innovate for the future.",
+            },
+          },
+        ],
+    content: null
+  },
+
   {
     section: "Industries One",
     complex: true,
