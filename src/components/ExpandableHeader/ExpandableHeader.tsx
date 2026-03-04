@@ -3,7 +3,7 @@
 import s from "./exp-header.module.scss";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { motion, AnimatePresence, complex } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Icons } from "../ui/icons/icons";
 import { MenuStructure } from "./structure";
 import Image from "next/image";
@@ -67,7 +67,7 @@ const ExpandableHeader: React.FC = () => {
       )[0].slides
     : sectionContent.slides;
 
-  console.log(subMenuContent);
+  // console.log(subMenuContent);
 
   const slideContent =
     menu.slide && subMenuContent
@@ -146,7 +146,7 @@ const ExpandableHeader: React.FC = () => {
             {!isMenuOpen ? <Icons.IconBurger /> : <Icons.IconClose />}
           </span>
           <span className={s.logo} onClick={onHomeNavigate}>
-            MGIC
+            <Image fill alt="logo" src="/images/mcs-logo.webp" />
           </span>
         </nav>
       </header>

@@ -27,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, icon, linkTo }) => {
         {icon && icon}
       </div>
     </button>
+   
   );
 };
 

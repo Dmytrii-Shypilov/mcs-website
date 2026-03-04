@@ -2,6 +2,16 @@
 
 export const MenuStructure = [
   {
+    section: "Industries T",
+    complex: false,
+    subsections: [],
+    slides: [],
+    content: {
+      image: "/images/skyline.webp",
+      text: "Our aerospace and defense experts help industry players navigate their day-to-day operations and identify ways they can innovate for the future.",
+    },
+  },
+  {
     section: "Industries Fur",
     complex: false,
     subsections: [],
